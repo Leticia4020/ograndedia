@@ -23,7 +23,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Link</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
@@ -31,7 +31,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#contate">Contate</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#queremos-compartilhar">Queremos compartilhar</a>
@@ -58,8 +58,8 @@
                     Venha comemorar conosco e partilhar momentos inesquecíveis, repletos de alegria, amor e celebração.
                 </p>
 
-                <button class="btn btn-primary" type="submit">Button</button>
-                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button class="btn btn-primary" type="submit">Save the Date</button>
+                <button type="button" class="btn btn-outline-primary">26/08/2028</button>
                 <br><br>
                 <img src="imagem-central.jpeg" alt="imagem de mesa no centro" class="imagem-central">
                 <br><br>
@@ -78,15 +78,15 @@
 
         <div class="col-md-6">
             <p>
-                A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+                Nossa história começou de um jeito simples, quase sem que percebêssemos que aquele encontro mudaria nossas vidas. Entre conversas, sorrisos e momentos compartilhados, fomos descobrindo, pouco a pouco, que havia algo especial entre nós. O que começou como uma aproximação despretensiosa ganhou espaço no coração e se transformou em uma vontade cada vez maior de estar juntos.
             </p>
 
             <p>
-                As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+                Vieram os primeiros encontros, as mensagens que atravessavam a noite, as risadas por coisas que só nós entendíamos e também os dias comuns, aqueles que, sem grandes acontecimentos, acabaram se tornando alguns dos nossos momentos favoritos. Foi nesses pequenos detalhes que aprendemos que o amor não está apenas nas grandes declarações, mas também na companhia, no cuidado e na escolha diária de caminhar lado a lado.
             </p>
 
             <p>
-                And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there’s none of that here.
+               Com o tempo, construímos nossa própria história, feita de sonhos compartilhados, planos, desafios e muitas lembranças que guardamos com carinho. Aprendemos a celebrar as conquistas um do outro, a oferecer apoio nos dias difíceis e, acima de tudo, a aproveitar a vida juntos, sempre encontrando motivos para sorrir.
             </p>
         </div>
 
@@ -104,15 +104,15 @@
 
         <div class="col-md-6 order-md-2">
             <p>
-                A paragraph of placeholder text. We’re using it here to show the use of the clearfix class.
+                Hoje, olhando para tudo o que vivemos, percebemos que cada passo nos trouxe até aqui. E é com o coração cheio de gratidão e alegria que decidimos dar o próximo passo: dizer “sim” para uma vida inteira lado a lado.Nosso casamento representa mais do que uma celebração. É o início de um novo capítulo de uma história que queremos continuar escrevendo todos os dias, com amor, cumplicidade, respeito e muitos sonhos pela frente.
             </p>
 
             <p>
-                As you can see the paragraphs gracefully wrap around the floated image.
+                Agora, queremos dividir esse momento tão especial com as pessoas que amamos. Afinal, uma história de amor fica ainda mais bonita quando pode ser celebrada ao lado de quem faz parte da nossa vida.
             </p>
 
             <p>
-                And yet, here you are, still persevering in reading this placeholder text.
+                Que este seja apenas o começo de muitos outros capítulos, de muitas aventuras, de uma casa cheia de carinho e de uma vida construída juntos. Porque, no fim, o que realmente importa é ter encontrado um ao outro e escolher, todos os dias, continuar caminhando de mãos dadas.
             </p>
         </div>
 
@@ -154,30 +154,69 @@
  <!-- Brides -->
  
    <section class="cards"  > 
-      <div class="card" style="width: 18rem;">
-        <img src="viagem.jpg" class="card-img-top" style="height: 240px;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <script>
+function mostrarAlerta(event, botao) {
+    event.preventDefault();
+
+    const alerta = botao.nextElementSibling;
+    alerta.classList.remove("d-none");
+}
+</script>
+
+ <div class="card" style="width: 18rem;">
+    <img src="viagem.jpg" class="card-img-top" style="height: 240px;" alt="Lua de mel">
+
+    <div class="card-body">
+        <h5 class="card-title">Lua de mel</h5>
+
+        <p class="card-text">
+            Aquela viagem para esquecer o CLT!<br>
+            Ajude os noivos com o descanso merecido.
+        </p>
+
+        <a href="#" class="btn btn-primary" onclick="mostrarAlerta(event, this)">
+            R$70,00
+        </a>
+
+        <div class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+            Comprado! Obrigada pela ajuda! ❤️
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
-      </div>
+    </div>
+</div>
+
 
       <div class="card" style="width: 18rem;">
         <img src="veiculo.jpg" class="card-img-top" style="height: 240px;" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Para não andar a pé</h5>
+          <p class="card-text">Chega de andar de bike quero pagar R$6,50 na gasolina.<br> Ajude os noivos a parar de gastar o havaianas.</p>
+            <a href="#" class="btn btn-primary" onclick="mostrarAlerta(event, this)">
+                R$50,00
+            </a>
+
+            <div class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+                Comprado! Obrigada pela ajuda! ❤️
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+
+
         </div>
       </div>
 
       <div class="card" style="width: 18rem;">
         <img src="netflix.jpg" class="card-img-top" style="height: 240px;" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Assistir filminho á noite</h5>
+          <p class="card-text">Dormir cedo? Que nada! O negocio é madrugar vendo O Mentalista. <br> Ajude os noivos a brigarem por assistir escondido do outro.</p>
+              <a href="#" class="btn btn-primary" onclick="mostrarAlerta(event, this)">
+                  R$20,00
+              </a>
+
+              <div class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+                  Comprado! Obrigada pela ajuda! ❤️
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+              </div>
         </div>
       </div>
     </section>
@@ -190,8 +229,10 @@
 
         <div class="row g-0 rounded-4 overflow-hidden">
 
-            <div class="col-md-6 bg-primary text-white p-5
-                        d-flex flex-column justify-content-center">
+            <div class="col-md-6 text-white p-5
+              d-flex flex-column justify-content-center"
+                style="background-color: #d46a8c;">
+
 
                 <h1 class="fw-bold">Vamos celebrar o amor!</h1>
 
@@ -201,13 +242,24 @@
                     Queremos você ao nosso lado para tornar esse momento ainda
                     mais especial.
                 </p>
+                  <a href="#" class="btn btn-light" onclick="confirmarPresenca(event, this)">
+                      Confirmar presença
+                  </a>
 
-                <div>
-                    <a href="#" class="btn btn-light">
-                        Confirmar presença
-                    </a>
+                  <div class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+                      Presença confirmada com sucesso!
+                      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  </div>
+                    <script>
+                    function confirmarPresenca(event, botao) {
+                        event.preventDefault();
 
-                </div>
+                        const alerta = botao.nextElementSibling;
+                        alerta.classList.remove("d-none");
+                    }
+                    </script>
+
+
 
 
 
@@ -233,42 +285,43 @@
         <div class="lets">
             <div class="card-group">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="date.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Save the Date</h5>
+                    <p class="card-text">Anote no carderninho a data! <br><Strong>(ou seu nome irá para o death note)</Strong><br><br>Te esperamos lá!</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    <small class="text-body-secondary">Dias faltando para confirmar: 345 dias</small>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="branco.jpeg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Proibido</h5>
+                    <p class="card-text">Se usar vestido branco vai perder o cabelo.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    <small class="text-body-secondary">Estou te vendo agora</small>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="festa.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Bora festejar</h5>
+                    <p class="card-text">A festa vai durar 6h se não aguentar pode ir embora viu.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    <small class="text-body-secondary">Não pode escolher musicas</small>
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-primary">Tudo pronto!</button>
         </div>
     </div>
-</section>>
+</section>
  <!-- confirma -->
-<footer>
+<section id="contate"></section>
+<footer >
 <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
         <div class="row text-center">
